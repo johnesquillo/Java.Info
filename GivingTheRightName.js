@@ -1,5 +1,5 @@
 let planetEarth = "Earth";
 let currentVisitor = "John";
 
-alert(planetEarth);
-alert(currentVisitor);
+console.log(planetEarth);
+console.log(currentVisitor);
