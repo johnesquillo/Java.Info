@@ -1,12 +1,7 @@
-const a = 1;
-const b = 2;
+let name = prompt('What is your name?');
 
-if (a < b) {
-    alert(`${a} is less than ${b}`);
-
-}else if (a > b) {
-    alert(`${a} is greater than ${b}`);
-
-}else {
-    alert(`${a} and ${b} are equal`);
+if(name == "John") {
+    alert(`Hello, ${name} your're so pogi`)
+} else {
+    alert("Who are you?");
 }
