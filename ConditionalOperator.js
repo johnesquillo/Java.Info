@@ -1,8 +1,7 @@
-let age = prompt('How old are you?', '');
+let name = prompt("What's the official name of JavaScript?");
 
-let message = (age < 3) ? 'Hi, Baby!' :
- (age < 18) ? 'Hello!' :
-  (age < 100) ? 'Greetings' :
-   'What an anusual age!';
-
-alert(message);
+if (name === "ECMAScript") {
+    alert("You're Right!");
+} else {
+    alert(`You don't know ${name} bitch!`);
+}
