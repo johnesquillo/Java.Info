@@ -1,4 +1,5 @@
-let age = 1;
+let height = null;
+let width = null;
 
-alert(age || 50);
-alert(age ?? 50);
+let area = (height ?? 100) * (width ?? 50);
+alert(area);
