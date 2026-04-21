@@ -1,5 +1,4 @@
-let firstName = null;
-let lastName = null;
-let nickName = "JB"
+let age = 1;
 
-alert(firstName ?? lastName ?? nickName ?? "Walang laman");
+alert(age || 50);
+alert(age ?? 50);
