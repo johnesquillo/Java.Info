@@ -1,2 +1,5 @@
-let name = "john" 
-alert(name ?? 'Walang laman');
+let firstName = null;
+let lastName = null;
+let nickName = "JB"
+
+alert(firstName ?? lastName ?? nickName ?? "Walang laman");
