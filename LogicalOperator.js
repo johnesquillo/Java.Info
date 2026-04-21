@@ -1,5 +1,5 @@
 let height = null;
 let width = null;
 
-let area = (height ?? 100) * (width ?? 50);
+let area = (height ?? "J") + (width ?? "B");
 alert(area);
