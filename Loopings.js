@@ -1,5 +1,5 @@
-let i = 3;
-while(i) {
+let i = 0;
+do {
     alert(i);
-    i--;
-}
+    i++;
+}while(i < 3);
