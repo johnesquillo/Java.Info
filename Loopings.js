@@ -1,5 +1,3 @@
-let i = 0;
-do {
+for(let i = 0; i < 3; i++) {
     alert(i);
-    i++;
-}while(i < 3);
+}
