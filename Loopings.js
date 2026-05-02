@@ -1,6 +1,5 @@
-let i = 0;
+while(true) {
+    let num = prompt('Enter a number greater than (100)', 0);
 
-while(i < 3) {
-    i++;
-    alert(`Number ${i}! `);
+    if (num > 100 ) break; 
 }
