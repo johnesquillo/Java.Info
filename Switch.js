@@ -1,11 +1,19 @@
-let browser = prompt('Enter a browser name');
+let a = +prompt('a?', '');
 
-if ( browser == 'Edge') {
-    alert("You've got the Edge! ");
+switch(a){
+    case 0:
+        alert(0);
+        break;
 
-}else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
-    alert('Okay we support these browsers too');
+    case 1:
+        alert(1);
+        break;
 
-}else {
-    alert('We hope that this page looks ok!');
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+
+        default:
+            alert('Cancelled');
 }
