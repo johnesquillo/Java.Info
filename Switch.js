@@ -2,12 +2,16 @@ let name = prompt('Enter a name');
 
 switch(name) {
     case 'John':
+        alert('Hi, John!')
+        break;
+
     case 'Jane':
-        alert('John or Jane');
+        alert('Hello, Jane!');
         break;
 
     case 'Josh':
         alert('Hi Josh!')
+        break;
 
     case '':
         alert('Never exsist!')
