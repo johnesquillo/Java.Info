@@ -1,19 +1,19 @@
-let name = prompt('Enter a name');
+let num = prompt('Enter a name');
 
-switch(name) {
-    case 'John':
+switch(num) {
+    case '1':
         alert('Hi, John!')
         break;
 
-    case 'Jane':
+    case '2':
         alert('Hello, Jane!');
         break;
 
-    case 'Josh':
+    case '3':
         alert('Hi Josh!')
         break;
 
-    case '':
+    case 4:
         alert('Never exsist!')
         break;
 
