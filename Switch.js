@@ -1,22 +1,11 @@
-let num = prompt('Enter a name');
+let browser = prompt('Enter a browser name');
 
-switch(num) {
-    case '1':
-        alert('Hi, John!')
-        break;
+if ( browser == 'Edge') {
+    alert("You've got the Edge! ");
 
-    case '2':
-        alert('Hello, Jane!');
-        break;
+}else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+    alert('Okay we support these browsers too');
 
-    case '3':
-        alert('Hi Josh!')
-        break;
-
-    case 4:
-        alert('Never exsist!')
-        break;
-
-        default:
-            alert('An unknown name');
+}else {
+    alert('We hope that this page looks ok!');
 }
