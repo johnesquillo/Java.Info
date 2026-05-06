@@ -1,5 +1,5 @@
-function sum(num1, num2) {
-    return num1 + num2;
+function favoriteAnimal(animal) {
+    return animal + " is my favorite animal!"
 }
 
-console.log(sum(1, 2));
+console.log(favoriteAnimal('Goat'))
