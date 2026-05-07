@@ -1,3 +1,7 @@
-B = {0 ,3, 2, 1}
-B.discard(0)
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+A.clear()
+B.clear()
 print(B)
+print(A)
