@@ -1,3 +1,4 @@
 student = dict(name="John", age=21)
-student["age"] = 25
-print(student.get("age"))
+
+student.update({"age": 25, "course": "IT", "address": "Muntinlupa City"})
+print(student)
