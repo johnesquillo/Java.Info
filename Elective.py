@@ -8,5 +8,5 @@ student = {
     }
 }
 
-for key in student.keys():
-    print(key)
+for values in student.values():
+    print(values)
