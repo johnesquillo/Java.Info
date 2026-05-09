@@ -1,3 +1,3 @@
 student = dict(name="John", age=21)
-
-print(student.get("name"))
+student["age"] = 25
+print(student.get("age"))
