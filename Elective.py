@@ -1,4 +1,4 @@
 student = dict(name="John", age=21)
 
-student.update({"age": 25, "course": "IT", "address": "Muntinlupa City"})
+student.update({"name": "Josh", "Gender": "Male", "age": 25, "address": "Muntinlupa City"} )
 print(student)
