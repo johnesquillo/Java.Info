@@ -1,6 +1,12 @@
-student = dict(name="John", age=21)
+student = {
+    "student1": {
+        "name": "John", "age": 25
+        },
 
-student.update({"name": "Josh", "Gender": "Male", "age": 25, "address": "Muntinlupa City"} )
+    "student2": {
+        "name": "Jake", "age": 26
+    }
+}
 
-for key, values in student.items():
-    print(key, values)
+for key in student.keys():
+    print(key)
