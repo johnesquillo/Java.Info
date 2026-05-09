@@ -1,3 +1,3 @@
-student = {"name": "John", "age": 20, "course": "IT"}
+student = dict(name="John", age=21)
 
 print(student)
