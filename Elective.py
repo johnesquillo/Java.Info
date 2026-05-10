@@ -1,9 +1,11 @@
-grades = {
-    "Math": 90, 
-    "Science": 75,
-    "English": 85
+students = {
+    "name": "John",
+    "Age": 25,
+    "Address": "Muntinlupa City",
+    "Subjects": ["MATH", "SCIENCE", "ENGLISH"]
+
 }
 
-for subject, score in grades.items():
-    if score >= 90:
-        print(subject, "HIGHEST!")
+students["Gender"] = "Male"
+students.update({"Year": "3rd", "Section": "A", "Course": "BSCS"})
+print(students)
