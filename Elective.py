@@ -8,5 +8,8 @@ student = {
     }
 }
 
-for key, values in student.items():
-    print(key, values)
+for values in student["student1"].values():
+    if "name" in student["student1"]:
+        print("Eyy!")
+    else:
+        print("AWTS!")
