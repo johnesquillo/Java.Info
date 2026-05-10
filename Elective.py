@@ -1,9 +1,6 @@
-students = {
-    "name": "John",
-    "Age": 25,
-    "Address": "Muntinlupa City",
-    "Subjects": ["MATH", "SCIENCE", "ENGLISH"]
+names = [
+    {"name": "John", "Age": 25}
+]
 
-}
-
-print(students["name"])
+for n in names:
+    print(n["name"])
