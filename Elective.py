@@ -6,6 +6,4 @@ students = {
 
 }
 
-students["Gender"] = "Male"
-students.update({"Year": "3rd", "Section": "A", "Course": "BSCS"})
-print(students)
+print(students["name"])
