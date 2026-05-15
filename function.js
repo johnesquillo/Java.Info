@@ -1,6 +1,13 @@
+let name = 'John';
+
 function myName() {
-    let myName = prompt('Enter your name');
-    alert(`Hello! ${myName}`)
+    name = 'Jake'
+    let result = 'Hello!' + name;
+    alert(result);
 }
 
+alert(name);
+
 myName();
+
+alert(name);
