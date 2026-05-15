@@ -8,7 +8,7 @@ function checkAge(age) {
 
 let age = prompt('How old are you?', 18);
  if (checkAge(age)) {
-    alert('Access granted')
+    alert('Access granted!')
 }else {
     alert('Access denied!');
 }
