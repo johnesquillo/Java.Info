@@ -1,6 +1,6 @@
-function sum(a, b) {
-    return a + b;
+function sum(a, b, c) {
+    return a + b + c;
 }
 
-let add = sum(1 ,3);
+let add = sum(1, 3, 4);
 alert(add);
