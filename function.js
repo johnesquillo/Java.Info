@@ -1,6 +1,14 @@
-function sum(a, b, c) {
-    return a + b + c;
+function checkAge(age) {
+    if (age >= 18) {
+        return true;
+    }else {
+        return confirm('Do you have permission from your parents?');
+    }
 }
 
-let add = sum(1, 3, 4);
-alert(add);
+let age = prompt('How old are you?', 18);
+ if (checkAge(age)) {
+    alert('Access granted')
+}else {
+    alert('Access denied!');
+}
