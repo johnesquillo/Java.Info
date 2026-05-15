@@ -1,8 +1,6 @@
 function showMessage(from, text) {
-    from = '*' + from + '*';
-    alert(from + ':' + text);
+    if ( text === undefined) {
+        text = 'no text given'
+    }
+        alert(from + ':' + text);
 }
-
-let from = 'Ann';
-showMessage(from, 'Hello');
-alert(from);
