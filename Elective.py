@@ -1,7 +1,11 @@
-import numpy as np
+a = [1, 2, 3]
+b = [4, 5, 6]
+sum_result = []
+product_result = []
 
-arr = np.array([1, 2, 3, 4, 5])
+for i in range(len(a)):
+    sum_result.append(a[i] + b[i])
+product_result.append(a[i] * b[i])
 
-print(np.mean(arr))
-print(np.sum(arr))
-print(np.max(arr))
+print(product_result) # Output: [4, 10, 18]
+print(sum_result) # [5, 7, 9]

@@ -1,5 +1,6 @@
-function favoriteAnimal(animal) {
-    return animal + " is my favorite animal!"
+function myName() {
+    let myName = prompt('Enter your name');
+    alert(`Hello! ${myName}`)
 }
 
-console.log(favoriteAnimal('Goat'))
+myName();
