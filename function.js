@@ -1,8 +1,6 @@
-function showMessage(from, text) {
-    if ( text === undefined) {
-        text = 'no text given'
-    }
-        alert(from + ':' + text);
+function sum(a, b) {
+    return a + b;
 }
 
-showMessage();
+let add = sum(1 ,3);
+alert(add);
