@@ -1,8 +1,8 @@
-function showMessage(from, text) {
-    if(text === undefined) {
-        text = text || 'no text given';
+function showMessage(text) {
+    if (text === undefined) {
+        text = 'no text given';
     }
-        alert(from + ':' + text);
-} 
+    alert(text);
+}
 
 showMessage();
