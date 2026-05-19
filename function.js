@@ -1,7 +1,7 @@
-function showMessage(count) {
-   alert(count ?? 'Unknown')
+function sum(a, b) {
+    return a + b;
 }
 
-showMessage(0);
-showMessage(null);
-showMessage();
+let result = sum(1, 3);
+alert(result)
+sum();
