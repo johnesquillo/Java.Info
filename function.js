@@ -1,14 +1,15 @@
-function showPrimes(n) {
-    for (let i = 2; i < n; i++) {
-        if(!isPrime(i)) continue;
-
-        alert(i);
+function checkAge(age) {
+    if (age > 18) {
+        return true;
+    } else {
+        return confirm('Did your parents allow you?')
     }
 }
 
-function isPrime(n) {
-    for (let i = 2; i < n; i++) {
-        if (n % i == 0) return false;
-    }
-    return true;
+let age = prompt('How old are you?');
+
+if(checkAge(age)) {
+    alert('Access granted')
+}else {
+    alert('Access denied')
 }
