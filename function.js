@@ -1,14 +1,6 @@
-function checkAge(age) {
-    if (age >= 18) {
-        return true;
-    }else {
-        return confirm('Do you have permission from your parents?');
-    }
+function showMessage(from, text = "no text give") {
+    alert(from + ':' + text);
+
 }
 
-let age = prompt('How old are you?', 18);
- if (checkAge(age)) {
-    alert('Access granted!')
-}else {
-    alert('Access denied!');
-}
+showMessage("ann");
