@@ -1,5 +1,5 @@
 function doNothing() {
-    alert(doNothing() == undefined);
+    return;
 }
 
-doNothing();
+alert(doNothing() === undefined);
