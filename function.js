@@ -1,8 +1,7 @@
-function showMessage(text) {
-    if (text === undefined) {
-        text = 'no text given';
-    }
-    alert(text);
+function showMessage(count) {
+   alert(count ?? 'Unknown')
 }
 
+showMessage(0);
+showMessage(null);
 showMessage();
