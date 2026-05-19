@@ -1,6 +1,9 @@
 function calculateTotal(a, b) {
-    return a + b
+    return (
+        a * 2 +
+        b * 3 +
+        (a + b)
+    );
 }
 
-let result = calculateTotal(1, 4);
-alert(result); 
+alert(calculateTotal(2, 4));
