@@ -1,11 +1,8 @@
-function checkAge(age) {
-   age = age > 18 || confirm('Did your parents allow you?')
+function min(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
 }
 
-let age = prompt('How old are you?');
-
-if(checkAge(age)) {
-    alert('Access granted')
-}else {
-    alert('Access denied')
-}
