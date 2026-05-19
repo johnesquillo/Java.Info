@@ -1,9 +1,8 @@
-function calculateTotal(a, b) {
-    return (
-        a * 2 +
-        b * 3 +
-        (a + b)
-    );
+function showPrimes(n) {
+    nextPrime: for (let i = 2; i < n; i++) {
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+        }
+            alert(i);
+    }
 }
-
-alert(calculateTotal(2, 4));
