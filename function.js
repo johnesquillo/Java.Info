@@ -1,6 +1,8 @@
-function showMessage(from, text) {
+function showMessage(from, text = 'Hello') {
+    from = '*' + from + '*';
     alert(from + ':' + text);
 }
 
-showMessage('Ann', 'Hello');
-showMessage('Jake', 'Hi');
+let from = 'Ann';
+showMessage(from);
+alert(from);
