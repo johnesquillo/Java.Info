@@ -1,17 +1,8 @@
-function getPow(x, n) {
-    let num = x;
+let name = 'John';
 
-    for(let i = 1; i < n; i++) {
-        num *= x;
-    }
-    return num;
+function showMessage() {
+    let message = "Hello, " + name;
+    alert(message);
 }
 
-let x = prompt('x?');
-let n = prompt('n?');
-
-if (n < 1) {
-    alert(`Power ${n} is not supported, use a positive integer`)
-}else{
-    alert(getPow(x, n));
-}
+showMessage();
