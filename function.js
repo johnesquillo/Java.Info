@@ -1,8 +1,13 @@
 let name = 'John';
 
-function showMessage() {
-    let message = "Hello, " + name;
+function userName() {
+    name = 'Jake';
+    let message = 'Hello, ' + name;
     alert(message);
 }
 
-showMessage();
+alert(name);
+
+userName();
+
+alert(name);
