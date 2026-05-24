@@ -1,13 +1,6 @@
-let name = 'John';
-
-function userName() {
-    name = 'Jake';
-    let message = 'Hello, ' + name;
-    alert(message);
+function showMessage(from, text) {
+    alert(from + ':' + text);
 }
 
-alert(name);
-
-userName();
-
-alert(name);
+showMessage('Ann', 'Hello');
+showMessage('Jake', 'Hi');
