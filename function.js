@@ -1,15 +1,16 @@
-function checkAge(age) {
-    if (age >= 18) {
-        return true;
-    } else {
-        return confirm('Do you have a permission from your parents?');
+function pow(x, n) {
+    let num = x;
+    for (let i = 1; i < n; i++){
+        num *= x;
     }
+        return num;
 }
 
-let age = prompt('How old are you?');
+let x = prompt('x?');
+let n = prompt('n?');
 
-if(checkAge(age)) {
-    alert('Access granted!');
+if (n < 1) {
+    alert(`Power ${n} is not supported, use a positive integer`)
 } else {
-    alert('Access denied!');
+    alert(pow(x, n));
 }
