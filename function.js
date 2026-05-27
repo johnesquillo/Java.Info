@@ -1,6 +1,7 @@
-let showName = function() {
+function showName() {
     alert('JOHN');
 }
 
+let func = showName;
+func();
 showName();
-
