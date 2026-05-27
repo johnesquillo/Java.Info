@@ -3,12 +3,8 @@ function ask(question, yes, no) {
         else no();
 }
 
-function showOk() {
-    alert("You agree");
-}
-
-function showCancel() {
-    alert('You cancelled the execution.');
-}
-
-ask("Do you agree?", showOk, showCancel);
+ask(
+    "Do you agree?",
+    function() {alert('You agree'); },
+    function() {alert('You cancelled the execution'); }
+);
