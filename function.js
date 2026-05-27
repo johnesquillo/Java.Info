@@ -1,5 +1,6 @@
-function showMessage() {
-    alert("Access granted!");
+function getSum(a, b) {
+    return a + b;
 }
 
-showMessage();
+let sum = getSum(5, 10);
+alert(sum);
