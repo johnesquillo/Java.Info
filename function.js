@@ -1,8 +1,8 @@
-function showName(name, text = 'HELLO!') {
-    alert(name + ':' + text);
-    alert(name + ': ' + text);
+function showName(name, text) {
+    if (text === undefined) {
+        text = "0";
+    }
+        alert(name + ':' + text);
 }
 
-let name = "John";
-
-showName(name);
+showName();
