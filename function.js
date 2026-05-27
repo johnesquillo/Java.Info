@@ -1,7 +1,14 @@
-let userName = function() {
-    alert('JOHN');
+function ask(question, yes, no) {
+    if(confirm(question)) yes()
+        else no();
 }
 
-let func = userName;
-alert(func);
-userName();
+function showOk() {
+    alert("You agree");
+}
+
+function showCancel() {
+    alert('You cancelled the execution.');
+}
+
+ask("Do you agree?", showOk, showCancel);
