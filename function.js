@@ -1,17 +1,12 @@
-function showAge(age) {
-    if (age >= 18) {
-        return true;
-
-    } else {
-        return confirm("Do you have a permission from your parents?");
+function showPrime(n) {
+    nextPrime:  for (let i = 2; i < n; i++) {
+        for (let j = 2; j < i; j++) {
+            if(i % j == 0) continue nextPrime;
+        }
+            alert(i);
     }
 }
 
-let age = prompt('How old are you?');
+let number = prompt('Enter a number');
 
-if(showAge(age)) {
-    alert('Access granted!');
-    
-} else {
-    alert('Access denied!');
-}
+showPrime(Number(number));
