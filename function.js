@@ -1,8 +1,7 @@
-function showName(name, text) {
-    if (text === undefined) {
-        text = text || "0";
-    }
-        alert(name + ':' + text);
+function showName(name) {
+    alert(name ?? "0");
 }
 
+showName(0);
+showName(null);
 showName();
