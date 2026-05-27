@@ -1,6 +1,6 @@
 function showName(name, text) {
     if (text === undefined) {
-        text = "0";
+        text = text || "0";
     }
         alert(name + ':' + text);
 }
