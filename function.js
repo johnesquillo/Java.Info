@@ -1,7 +1,17 @@
-function showName(name) {
-    alert(name ?? "0");
+function showAge(age) {
+    if (age >= 18) {
+        return true;
+
+    } else {
+        return confirm("Do you have a permission from your parents?");
+    }
 }
 
-showName(0);
-showName(null);
-showName();
+let age = prompt('How old are you?');
+
+if(showAge(age)) {
+    alert('Access granted!');
+    
+} else {
+    alert('Access denied!');
+}
