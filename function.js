@@ -1,6 +1,8 @@
-function showMessage(name, text) {
-    alert(name + ':' + text);   
+function showName(name, text) {
+    alert(name + ':' + text);
+    alert(name + ': ' + text);
 }
 
-showMessage("Jake", "Hello");
-showMessage("John", "Hi");
+let name = "John";
+
+showName(name, 'Hello');
