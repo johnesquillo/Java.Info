@@ -6,4 +6,8 @@ function showName() {
     alert(message);
 }
 
+alert(name);
+
 showName();
+
+alert(name);
