@@ -1,6 +1,8 @@
-function getSum(a, b) {
-    return a + b;
+let name = 'john';
+
+function showName() {
+    let message = 'Hello, ' + name;
+    alert(message);
 }
 
-let sum = getSum(5, 10);
-alert(sum);
+showName();
