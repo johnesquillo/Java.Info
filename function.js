@@ -1,13 +1,11 @@
-let name = 'john';
+let userName = 'John';
 
 function showName() {
-    name = 'Jake'
-    let message = 'Hello, ' + name;
+    userName = 'Jake';
+    let message = 'Hello,' + userName;
     alert(message);
 }
 
-alert(name);
-
 showName();
 
-alert(name);
+alert(userName);
