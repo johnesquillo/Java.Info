@@ -1,10 +1,16 @@
-function ask(question, yes, no) {
-    if(confirm(question)) yes()
-        else no();
+let age = 16;
+
+if (age < 18) {
+    welcome();
+
+    function welcome() {
+        alert('Hello');
+    }
+
+}else {
+    function welcome() {
+        alert('Greetings!');
+    }
 }
 
-ask(
-    "Do you agree?",
-    function() {alert('You agree'); },
-    function() {alert('You cancelled the execution'); }
-);
+welcome();
