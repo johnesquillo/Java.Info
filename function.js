@@ -1,2 +1,3 @@
-let double = n => n * 2;
-alert(double(4));
+let sayHi = () => alert('Hello!');
+
+sayHi();
