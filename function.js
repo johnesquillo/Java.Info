@@ -1,2 +1,2 @@
-let sum = (a, b) => a + b;
-alert(sum(5, 5));
+let double = n => n * 2;
+alert(double(4));
