@@ -1,16 +1,17 @@
-let age = 16;
+let age = prompt('How old are you?', 18);
+
+let welcome;
 
 if (age < 18) {
-    welcome();
 
-    function welcome() {
-        alert('Hello');
-    }
+    welcome = function() {
+        alert('Hello!');
+    };
 
 }else {
-    function welcome() {
-        alert('Greetings!');
-    }
+    welcome = function() {
+        alert('Greeting!');
+    };
 }
 
 welcome();
