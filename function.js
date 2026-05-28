@@ -1,6 +1,10 @@
-let sum = (a, b) => {
-    let result = a + b;
-    return result;
-};
+function ask(question, yes, no) {
+    if(confirm(question)) yes();
+    else no();
+}
 
-alert(sum(10, 10));
+ask(
+    "Do you agree?",
+    () => alert("You agree!"),
+    () => alert("You denied!")
+);
