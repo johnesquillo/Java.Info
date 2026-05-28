@@ -1,3 +1,6 @@
-let sayHi = () => alert('Hello!');
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+};
 
-sayHi();
+alert(sum(10, 10));
