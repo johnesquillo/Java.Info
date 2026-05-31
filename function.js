@@ -1,10 +1,11 @@
-function ask(question, yes, no) {
-    if(confirm(question)) yes();
-    else no();
+
+function showName(from, text) {
+    let name = 'John';
+    from = '*' + from + '*';
+    alert(from + ':' + text);
 }
 
-ask(
-    "Do you agree?",
-    () => alert("You agree!"),
-    () => alert("You denied!")
-);
+let from = 'John';
+showName(from, 'HELLO, POGI!');
+
+
