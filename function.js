@@ -1,11 +1,9 @@
 let userName = 'John';
 
-function showName(from, text) {
+let showName = (from, text) => {
     userName = 'Jake';
+    from = '*' + from + '*';
     alert(from + ':' + text);
-}
-
-let from = 'Ann'
-showName(from, 'Hello')
-
-alert(userName);
+};
+let from = 'Jake';
+showName(from, 'Hello');
