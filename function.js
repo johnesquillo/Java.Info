@@ -1,11 +1,11 @@
+let userName = 'John';
 
 function showName(from, text) {
-    let name = 'John';
-    from = '*' + from + '*';
+    userName = 'Jake';
     alert(from + ':' + text);
 }
 
-let from = 'John';
-showName(from, 'HELLO, POGI!');
+let from = 'Ann'
+showName(from, 'Hello')
 
-
+alert(userName);
