@@ -1,9 +1,6 @@
-let userName = 'John';
+let age = prompt('How old are you?', 18);
 
-let showName = (from, text) => {
-    userName = 'Jake';
-    from = '*' + from + '*';
-    alert(from + ':' + text);
-};
-let from = 'Jake';
-showName(from, 'Hello');
+let getAge = (age < 18) ? 
+() => {alert('Hello'); } :
+() => {alert('Greetings'); }
+getAge();
