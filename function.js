@@ -1,17 +1,10 @@
-function sum(a, b) {
-    return a + b;
+let showPrimes = (n) => {
+    nextPrime: for (let i = 2; i < n; i++) {
+        for (j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+        }
+            alert(i);
+    }
 }
-
-let result = sum(5, 5);
-alert(result);
-
-function multiply(a, b) {
-    return a * b;
-}
-
-let res = multiply(5, 5);
-alert(res);
-
-total = sum(5, 5) + multiply(5, 5);
-alert(`Total: ${total}`);
-
+let num = prompt('Enter a number');
+showPrimes(Number(num));
