@@ -1,13 +1,15 @@
-function getPrimes(n) {
-   ako_to_si_natoy: for (let i = 2; i < n; i++) {
-        for (let j = 2; j < i; j++) {
-            if (i % j === 0) continue ako_to_si_natoy;
-        }
-            alert(i);
-
-    }
+function multiply(a, b) {
+    return a * b;
 }
 
-let num = prompt('Enter a number', "");
- 
-getPrimes( Number(num));
+let result = multiply(4, 5);
+alert(result);
+
+describe("multiply()", function() {
+
+    it("multiplies 5 and 5", function() {
+
+        assert.equal(multiply(5, 5), 25);
+
+    });
+});
