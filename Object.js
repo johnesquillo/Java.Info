@@ -3,4 +3,4 @@ const user = {
     age: 30
 };
 
-alert(user.key);
+alert(user.name);
