@@ -3,5 +3,5 @@ const user = {
     age: 30,
     isAdmin: true
 };
-
-alert(user.isAdmin);
+delete user.age;
+alert(user.age);
