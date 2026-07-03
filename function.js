@@ -1,6 +1,13 @@
-const user = {
-    name: 'John',
-    age: 30
-};
+function getPrimes(n) {
+    getPrimes:
+        for (let i = 2; i < n; i++) {
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) continue getPrimes;
+            }
+                alert(i);
+        }
+}
 
-alert(user.name);
+const num = prompt('Enter a number', '');
+
+getPrimes(Number(num))
