@@ -1,15 +1,6 @@
-function multiply(a, b) {
-    return a * b;
+function getName(from, text) {
+    alert(from + ':' + text);
 }
 
-let result = multiply(4, 5);
-alert(result);
-
-describe("multiply()", function() {
-
-    it("multiplies 5 and 5", function() {
-
-        assert.equal(multiply(5, 5), 25);
-
-    });
-});
+const from = 'John';
+getName(from, 'Hello');
