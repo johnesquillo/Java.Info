@@ -1,6 +1,7 @@
 const user = {
     name: 'John',
-    age: 30
+    age: 30,
+    isAdmin: true
 };
 
-alert(user.name);
+alert(user.isAdmin);
