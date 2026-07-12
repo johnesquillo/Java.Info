@@ -1,9 +1,5 @@
-function lCat(cat) {
-    return cat.startsWith("L");
-}
-
 const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
 
-const filtered = cats.filter(lCat);
+const filtered = cats.filter((cat) => cat.startsWith('L'));
 
 alert(filtered);
