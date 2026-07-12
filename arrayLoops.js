@@ -1,5 +1,9 @@
-const cats = ['Leopard', 'Several', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
-
-for (const cat of cats) {
-    alert(cat);
+function toUpper(string) {
+    return string.toUpperCase();
 }
+
+const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+const upperCats = cats.map(toUpper);
+
+alert(upperCats);
