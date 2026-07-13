@@ -1,9 +1,13 @@
-const user = {
-    name: 'John',
-    age: 23,
-    address: 'Muntinlupa'
-};
+const names = ["Jazz",  "Blues"];
 
-for (let key in user) {
-    alert(user[key]);
-}
+let getNames = names;
+
+getNames[Math.floor((names.length - 1) / 1)] = "Classics";
+
+getNames.shift();
+
+getNames.unshift("Rap", "Reggae");
+
+names.push("Rock-n-Roll");
+
+alert(getNames);
