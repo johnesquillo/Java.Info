@@ -4,6 +4,6 @@ const user = {
     address: 'Muntinlupa'
 };
 
-for (let user of user) {
+for (let key in user) {
     alert(user[key]);
 }
