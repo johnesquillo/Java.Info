@@ -1,4 +1,4 @@
 let name = ['John', 'Josh', 'Jake'];
 
-name.shift()
+name.unshift('James');
 alert(name);
