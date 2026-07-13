@@ -1,3 +1,4 @@
-let arr = ['Jake', {name: 'John' }, true, function() {alert('hello');}];
+let name = ['John', 'Josh', 'Jake'];
 
-alert(arr[arr.length-1]); 
+name.push('James');
+alert(name);
