@@ -1,4 +1,5 @@
 let name = ['John', 'Josh', 'Jake'];
 
-name.unshift('James');
-alert(name);
+for (let i = 0; i < name.length; i++) {
+    alert(name[i]);
+}
