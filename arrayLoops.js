@@ -1,5 +1,3 @@
-const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+let name = ['Jake', 'John', 'Josh'];
 
-const filtered = cats.filter((cat) => cat.startsWith('L'));
-
-alert(filtered);
+alert(name[0]);
