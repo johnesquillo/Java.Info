@@ -1,3 +1,3 @@
 let name = ['Jake', 'John', 'Josh'];
-
-alert(name[0]);
+name[0] = 'Jasmine';
+alert(name); 
