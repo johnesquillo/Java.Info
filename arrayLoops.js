@@ -1,3 +1,4 @@
-let name = ['Jake', 'John', 'Josh'];
-name[3] = 'Jasmine';
-alert(name); 
+let arr = ['Jake', {name: 'John' }, true, function() {alert('hello');}];
+
+alert(arr[1].name); 
+arr[3]();
