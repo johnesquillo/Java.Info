@@ -1,5 +1,9 @@
-let names = ['John', 'Josh', 'Jake'];
+const user = {
+    name: 'John',
+    age: 23,
+    address: 'Muntinlupa'
+};
 
-for (let name of names) {
-    alert(name);
+for (let user of user) {
+    alert(user[key]);
 }
