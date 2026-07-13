@@ -1,5 +1,5 @@
-let name = ['John', 'Josh', 'Jake'];
+let names = ['John', 'Josh', 'Jake'];
 
-for (let i = 0; i < name.length; i++) {
-    alert(name[i]);
+for (let name of names) {
+    alert(name);
 }
