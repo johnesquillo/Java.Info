@@ -1,13 +1,12 @@
-const names = ["Jazz",  "Blues"];
+const arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
-let getNames = names;
+function sumInput() {
+    let i = 0;
 
-getNames[Math.floor((names.length - 1) / 1)] = "Classics";
+    while(true) {
 
-getNames.shift();
+        let num = +prompt('', 0);
+    }
+}
 
-getNames.unshift("Rap", "Reggae");
-
-names.push("Rock-n-Roll");
-
-alert(getNames);
+sumInput();
