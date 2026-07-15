@@ -1,12 +1,19 @@
-const arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-
 function sumInput() {
-    let i = 0;
+    let num = [];
 
     while(true) {
+        const values = prompt('', 0);
 
-        let num = +prompt('', 0);
+        if (values === '' || values === null || !isFinite(values)) break;
+
+        num.push(+values)
     }
-}
 
-sumInput();
+    let sum = 0;
+    for (let number of num) {
+        sum += number;
+    }
+        return sum;
+
+}
+alert(sumInput());
