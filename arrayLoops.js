@@ -1,19 +1,21 @@
 function sumInput() {
-    let num = [];
+    let numSelection = [];
 
     while(true) {
-        const values = prompt('', 0);
+        
+        let nums = prompt('', 0);
 
-        if (values === '' || values === null || !isFinite(values)) break;
+        if (nums === "" || nums === null || nums === !isFinite(nums)) break;
 
-        num.push(+values)
+        numSelection.push(+nums);
     }
 
-    let sum = 0;
-    for (let number of num) {
-        sum += number;
-    }
-        return sum;
+        let sum = 0;
 
+        for (let number of numSelection) {
+            sum += number;
+        }
+            return sum;
 }
+
 alert(sumInput());
