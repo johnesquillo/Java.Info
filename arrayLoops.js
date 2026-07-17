@@ -5,7 +5,7 @@ function sumInput() {
         
         let nums = prompt('', 0);
 
-        if (nums === "" || nums === null || nums === !isFinite(nums)) break;
+        if (nums === "" || nums === null || !isFinite(nums)) break;
 
         numSelection.push(+nums);
     }
