@@ -1,21 +1,6 @@
-function sumInput() {
-    let numSelection = [];
-
-    while(true) {
-        
-        let nums = prompt('', 0);
-
-        if (nums === "" || nums === null || !isFinite(nums)) break;
-
-        numSelection.push(+nums);
-    }
-
-        let sum = 0;
-
-        for (let number of numSelection) {
-            sum += number;
-        }
-            return sum;
+function getMaxSubSum(arr) {
+    
+    
 }
 
-alert(sumInput());
+alert([1, 2, 3]);
