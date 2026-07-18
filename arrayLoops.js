@@ -1,6 +1,7 @@
 function getMaxSubSum(arr) {
-    
+   
     
 }
 
-alert([1, 2, 3]);
+const numbers = [-1, 2, 3, -9];
+alert(numbers);
