@@ -1,3 +1,4 @@
+// JS.Info Task
 function getMaxSubSum(arr) {
    
     
