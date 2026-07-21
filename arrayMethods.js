@@ -1,5 +1,3 @@
-let arr = ['t', 'e', 's', 't'];
+let arr = [1, 2];
 
-alert(arr.slice(1, 3));
-
-alert(arr.slice(-2));
+alert(arr.concat([3, 4], 5, 6));
