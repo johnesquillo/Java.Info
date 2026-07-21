@@ -1,3 +1,8 @@
 let arr = [1, 2];
 
-alert(arr.concat([3, 4], 5, 6));
+const name = {
+    name: 'John',
+    age: 30
+};
+
+alert( arr.concat(name));
