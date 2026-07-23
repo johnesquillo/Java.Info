@@ -1,4 +1,3 @@
-const arr = [1, 2, 5];
+const arr = [1, 2];
 
-arr.splice(-1, 0, 3, 4);
-alert(arr);
+alert( arr.concat([3, 4]));
