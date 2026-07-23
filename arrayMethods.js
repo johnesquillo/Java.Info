@@ -1,5 +1,4 @@
-const arr = ['I', 'Study', 'JavaScript'];
+const arr = [1, 2, 5];
 
-arr.splice(2, 0, "complex", "language");
-
+arr.splice(-1, 0, 3, 4);
 alert(arr);
