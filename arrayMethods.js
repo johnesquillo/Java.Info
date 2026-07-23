@@ -12,9 +12,13 @@ let arrays = arr.forEach((item, index, array) => {
 let users = [
     {id: 1, name: "John"},
     {id: 2, name: "Jake"},
-    {id: 3, name: "Josh"}
+    {id: 3, name: "Josh"},
+    {id: 4, name: "John"}
 ];
 
 let user = users.find(item => item.id == 1);
 
+
 alert( user.name );
+alert( users.findIndex(user => user.name == "John"));
+alert( users.findLastIndex(user => user.name == "John"));
