@@ -1,7 +1,5 @@
-const arr = ['John', 'Esquillo', 'Malones'];
+const arr = ['I', 'Study', 'JavaScript'];
 
+arr.splice(2, 0, "complex", "language");
 
-
-let array = arr.forEach((item, index, array) => {
-    alert(`${item} is at index ${index} in ${array}`);
-});
+alert(arr);
