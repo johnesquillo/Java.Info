@@ -1,3 +1,10 @@
 const arr = [1, 2];
 
-alert( arr.concat([3, 4], [5, 6]));
+let arrayLike = {
+    0: "Somthing",
+    1: "else",
+    [Symbol.isConcatSpreadable]: true,
+    length: 2
+};
+
+alert( arr.concat(arrayLike));
