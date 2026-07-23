@@ -1,10 +1,7 @@
-const arr = [1, 2];
+const arr = ["John", "Esquillo", "Malones"];
 
-let arrayLike = {
-    0: "Somthing",
-    1: "else",
-    [Symbol.isConcatSpreadable]: true,
-    length: 2
-};
+alert( arr.indexOf("John"));
 
-alert( arr.concat(arrayLike));
+let arrays = arr.forEach((item, index, array) => {
+    alert(`${item} is at index ${index} in ${array}`);
+});
