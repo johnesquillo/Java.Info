@@ -37,3 +37,9 @@ alert(usersSome.length);
 let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
 alert(lengths);
 
+const letters = ["B", "C", "A"];
+
+letters.sort();
+
+alert(letters);
+
