@@ -37,9 +37,8 @@ alert(usersSome.length);
 let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
 alert(lengths);
 
-const letters = ["B", "C", "A"];
+let countries = ['Österreich', 'Andorra', 'Vietnam'];
 
-letters.sort();
+alert( countries.sort( (a, b) => a > b ? 1 : -1) );
 
-alert(letters);
 
