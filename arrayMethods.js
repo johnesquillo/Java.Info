@@ -39,6 +39,14 @@ alert(lengths);
 
 let countries = ['Österreich', 'Andorra', 'Vietnam'];
 
+countries.reverse();
+
 alert( countries.sort( (a, b) => a.localeCompare(b) ) );
 
+let name = 'Bilbo, Gandalf, Nazgul';
+
+let array = name.split(', ');
+for (let name of array) {
+    alert(`A message to ${name}.`);
+}
 
