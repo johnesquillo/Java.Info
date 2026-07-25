@@ -39,6 +39,6 @@ alert(lengths);
 
 let countries = ['Österreich', 'Andorra', 'Vietnam'];
 
-alert( countries.sort( (a, b) => a > b ? 1 : -1) );
+alert( countries.sort( (a, b) => a.localeCompare(b) ) );
 
 
