@@ -43,8 +43,12 @@ countries.reverse();
 
 alert( countries.sort( (a, b) => a.localeCompare(b) ) );
 
-let str = 'test';
+let str = ['Bilbo', 'Gandalf', 'Nazgul'];
 
-alert(str.split(''));
+let res = str.join(';');
+
+alert(res);
+
+
 
 
