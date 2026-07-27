@@ -49,6 +49,13 @@ let res = str.join(';');
 
 alert(res);
 
+let num = [1, 2, 3, 4, 5];
+
+let result = num.reduce((sum, current) => sum + current, 0);
+alert(result);
+
+
+
 
 
 
