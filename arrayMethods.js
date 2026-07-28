@@ -49,7 +49,7 @@ let res = str.join(';');
 
 alert(res);
 
-let num = [1, 2, 3, 4, 5];
+let num = [1, 2, 3, 4, 5, 10];
 
 let result = num.reduceRight((sum, current) => sum + current, 0);
 alert(result);
