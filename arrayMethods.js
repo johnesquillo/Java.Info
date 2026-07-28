@@ -54,6 +54,17 @@ let num = [1, 2, 3, 4, 5, 10];
 let result = num.reduceRight((sum, current) => sum + current, 0);
 alert(result);
 
+let array = [
+    [0, 1],
+    [2, 3],
+    [4, 5],
+];
+
+const output = array.reduceRight((accumulator, currentValue) =>
+    accumulator.concat(currentValue),
+);
+
+alert(output);
 
 
 
