@@ -66,6 +66,16 @@ const output = array.reduceRight((accumulator, currentValue) =>
 
 alert(output);
 
+let army = {
+    minAge: 18,
+    maxAge: 27,
+    canJoin(user) {
+        return user.age >= this.minAge && user.age < this.maxAge;
+    }
+};
+
+
+
 
 
 
