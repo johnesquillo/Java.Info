@@ -74,7 +74,18 @@ let army = {
     }
 };
 
+let userAge = [
+    {age: 16},
+    {age: 20},
+    {age: 23},
+    {age: 30},
+];
 
+let soldiers = userAge.filter(army.canJoin, army);
+
+alert(soldiers.length);
+alert(soldiers[0].age);
+alert(soldiers[1].age);
 
 
 
