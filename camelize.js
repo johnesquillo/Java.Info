@@ -1,7 +1,17 @@
 function camelize(str) {
-    return str;
+    return str
+
+    .split('-')
+    .map(
+        (item, index) => index == 0 ? item : item[0].toUpperCase() + item.slice(1)
+    )
+    .join('');
+
+    
+    
+
 }
 
-camelize("background-color");
-camelize("list-style-image");
-camelize("-webkit-transition");
+alert(camelize('background-color'));
+alert(camelize('list-style-image'));
+alert(camelize('-webkit-transition'));
