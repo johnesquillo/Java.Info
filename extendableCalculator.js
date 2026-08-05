@@ -1,17 +1,36 @@
-function calculate(str) {
-    return str.split('').reduce((acc, char) => {
-        if (char === '+') {
-            return acc + 1;
-        }
-        if ( char === '-') {
-            return acc - 1;
-        }
-    }, 0);
+function calculate(expression) {
+    return expression
+
+        .split('')
+        .reduce((acc, char) => {
+            if (char === '+') {
+                return acc + 1;
+
+            } else if (char === '-') {
+                return acc - 1;
+
+            } else if (char === '*') {
+                return acc * 2;
+
+            } else if (char === '/') {
+                return acc / 2;
+
+            } else {
+                return acc;
+            }
+        });
+            alert(`Result: ${acc}`);
 }
 
-addMethod('multiply', (a, b) => a * b);
-addMethod('divide', (a, b) => a / b);
-addMethod('power', (a, b) => Math.pow(a, b));
-addMethod('modulus', (a, b) => a % b);
-addMethod('max', (a, b) => Math.max(a, b));
-alert(calculate('++-+'));
+function addMethod(operator, func) {
+    addMethod[operator] = func;
+    addMethod[operator] = function (a, b) {
+        return func(a, b);
+    };    
+}
+
+const numExpression = "2 + 3 * 4 - 5 / 2";
+
+let expression = prompt('Enter an expression number with operators (+, -, *, /):');
+let result = calculate(expression);
+alert(`Result: ${result}`);
