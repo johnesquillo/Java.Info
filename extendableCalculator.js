@@ -1,26 +1,27 @@
-function calculate(expression) {
-    let parts = expression.split(" ");
+function Calculator() {
+    this.methods = {
+        "-" : (a, b) => a - b,
+        "+" : (a, b) => a + b
+    };
 
-    let result = Number(parts[0]);
+    this.calculate = (str) => {
+        const split = str.split(" ");
+        const a = +split[0];
+        const op = split[1];
+        const b = +split[2];
 
-    for (let i = 1; i < parts.length; i += 2) {
-        let operator = parts[i];
-        let number = Number(parts[i + 1]);
-
-        if (operator === "+") {
-            result += number;
-        } else if (operator === "-") {
-            result -= number;
-        } else if (operator === "*") {
-            result *= number;
-        } else if (operator === "/") {
-            result /= number;
+        if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+            return NaN;
         }
-    }
-
-    return result;
+        return this.methods[op](a, b);
+    };
+    this.addMethod = (name, func) => {
+        this.methods[name] = func;
+    };
 }
 
-let expression = prompt("Enter an expression:");
+let n1 = +prompt("Enter an expression (e.g., 3 + 7):", "3 + 7");
+let n2 = +prompt("Enter another expression (e.g., 10 - 5):", "10 - 5");
+let calc = new Calculator();
 
-alert(calculate(expression));
+alert(`${calc.calculate(n1) + calc.calculate(n2)}`);
