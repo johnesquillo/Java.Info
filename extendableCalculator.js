@@ -20,8 +20,18 @@ function Calculator() {
     };
 }
 
-let n1 = +prompt("Enter an expression (e.g., 3 + 7):", "3 + 7");
-let n2 = +prompt("Enter another expression (e.g., 10 - 5):", "10 - 5");
 let calc = new Calculator();
 
-alert(`${calc.calculate(n1) + calc.calculate(n2)}`);
+alert(calc.calculate("3 + 7"));
+alert(calc.calculate("3 - 7"));
+
+let powerCalc = new Calculator();
+
+calc.addMethod("*", (a, b) => a * b);
+calc.addMethod("/", (a, b) => a / b);
+calc.addMethod("**", (a, b) => a ** b);
+
+alert(calc.calculate("2 * 3"));
+alert(calc.calculate("2 / 3"));
+alert(calc.calculate("2 ** 3"));
+
