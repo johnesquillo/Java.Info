@@ -4,5 +4,13 @@ let users = [
     {name: "Jane", surname: "Doe", id: 3}
 ];
 
-let fullNames = users.map(user => `${user.name} ${user.surname}`);
-alert(fullNames);
+let usersMapped = users.map(user => ({
+    fullname: `${user.name} ${user.surname}`,
+    id: user.id
+}));
+
+alert(usersMapped[0].id);
+alert(usersMapped[0].fullname);
+
+
+
