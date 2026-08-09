@@ -1,6 +1,6 @@
 function sortByAge(users) {
     return users   
-       .sort((a, b) => a.age - b.age);
+       .sort((a, b) => a.age - b.age)
 }
 
 let userList = [
@@ -9,5 +9,8 @@ let userList = [
     {name: "Jane", age: 28}
 ];
 
+sortByAge(userList);
 
-alert(userList.map(user => `${name} : ${age}`).join(", "));
+alert(userList[0].name);
+alert(userList[1].name);
+alert(userList[2].name);
