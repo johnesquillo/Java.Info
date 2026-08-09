@@ -11,4 +11,3 @@ let userList = [
 
 
 alert(userList.map(user => `${name} : ${age}`).join(", "));
-alert(sortByAge(users));
