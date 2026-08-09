@@ -9,6 +9,6 @@ let userList = [
     {name: "Jane", age: 28}
 ];
 
-let sortedList = sortByAge(users);
 
-alert(sortedList.map(users => `${userList.name} : ${userList.age}`.join(", ")));
+alert(userList.map(user => `${name} : ${age}`).join(", "));
+alert(sortByAge(users));
