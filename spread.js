@@ -1,7 +1,11 @@
-function sum(x, y, z) {
-    return x + y + z;
+function sum(...theArgs) {
+    let total = 0;
+
+    for (const arg of theArgs) {
+        total += arg;
+    }
+     return total;
 }
 
-const number = [1, 2, 3];
-
-alert(sum(...number));
+alert(sum(1, 2, 3));
+alert(sum(1, 2, 3, 4));
