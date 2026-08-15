@@ -1,11 +1,7 @@
-function sum(...theArgs) {
-    let total = 0;
+const container = document.querySelector("#container");
 
-    for (const arg of theArgs) {
-        total += arg;
-    }
-     return total;
-}
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is the glorious text-content!";
 
-alert(sum(1, 2, 3));
-alert(sum(1, 2, 3, 4));
+container.appendChild(content);
