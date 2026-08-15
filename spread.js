@@ -31,3 +31,19 @@ const paragraph = document.createElement("p");
 paragraph.textContent = "ME TOO!";
 document.appendChild(paragraph);
 
+
+// Method 3
+function alertFunction() {
+    alert("AGAYY!");
+}
+
+const btn = document.querySelector("#btn");
+
+btn.onclick = alertFunction;
+
+btn.addEventListener("click", alertFunction);
+
+
+
+
+
