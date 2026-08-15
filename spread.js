@@ -46,11 +46,12 @@ btn.addEventListener("click", alertFunction);
 
 const buttons = document.querySelector("button");
 
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        alert(button.id);
-    });
-});
+const btn = document.querySelector("#btn");
+
+function handleClick() {
+    alert('It was clicked!');
+}
+btn.addEventListener('click', handleClick);
 
 
 
