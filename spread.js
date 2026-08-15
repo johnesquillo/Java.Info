@@ -32,26 +32,10 @@ paragraph.textContent = "ME TOO!";
 document.appendChild(paragraph);
 
 
-// Method 3
-function alertFunction() {
-    alert("AGAYY!");
-}
-
-const btn = document.querySelector("#btn");
-
-btn.onclick = alertFunction;
-
-btn.addEventListener("click", alertFunction);
-
-
-const buttons = document.querySelector("button");
-
-const btn = document.querySelector("#btn");
-
-function handleClick() {
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', function() {
     alert('It was clicked!');
-}
-btn.addEventListener('click', handleClick);
+});
 
 
 
