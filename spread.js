@@ -32,11 +32,11 @@ paragraph.textContent = "ME TOO!";
 document.appendChild(paragraph);
 
 
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', function() {
-    alert('It was clicked!');
-});
+let btn = document.querySelector('#btn');
 
+btn.addEventListener('click',(event) => {
+    console.log('clicked');
+});
 
 
 
