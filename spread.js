@@ -34,9 +34,9 @@ document.appendChild(paragraph);
 
 let btn = document.querySelector('#btn');
 
-btn.addEventListener('click',(event) => {
+btn.onclick = (event) => {
     console.log('clicked');
-});
+};
 
 
 
