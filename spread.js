@@ -32,3 +32,22 @@ let textBox = document.getElementById('message');
 textBox.addEventListener('keydown', (event) => {
     alert(`key=${event.key},code=${event.code}`);
 });
+
+let menu = document.querySelector('#menu');
+menu.addEventListener('click', (event) => {
+    let target = event.target;
+
+    switch(target.id) {
+        case 'home':
+            alert('Home menu was clicked!');
+        break;
+
+        case 'dashboard':
+            alert('Dashboard menu was clicked!');
+        break;
+
+        case 'report':
+            alert('Report menu was clicked!');
+            break;
+    }
+});
