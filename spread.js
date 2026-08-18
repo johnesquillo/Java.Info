@@ -27,3 +27,8 @@ msg.addEventListener("keypress", (event) => {
 msg.addEventListener("keyup", (event) => {
 
 });
+
+let textBox = document.getElementById('message');
+textBox.addEventListener('keydown', (event) => {
+    alert(`key=${event.key},code=${event.code}`);
+});
