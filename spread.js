@@ -14,3 +14,16 @@ link.addEventListener('click', (event) => {
     alert('Clicked!');
     event.preventDefault();
 });
+
+let msg = document.getElementById('#message');
+msg.addEventListener("keydown", (event) => {
+
+});
+
+msg.addEventListener("keypress", (event) => {
+
+});
+
+msg.addEventListener("keyup", (event) => {
+
+});
