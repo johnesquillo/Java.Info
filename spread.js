@@ -51,3 +51,12 @@ menu.addEventListener('click', (event) => {
             break;
     }
 });
+
+let btnn = document.querySelector('.btn');
+btnn.addEventListener('click', () => {
+    alert('Mouse click');
+});
+
+
+let clickEvent = new Event('click');
+btnn.dispatchEvent(Event);
