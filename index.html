@@ -32,6 +32,34 @@
         <li><a id="dashboard">Dashboard</a></li>
         <li><a id="report">Report</a></li>
     </ul>
+     <div class="note">JS Cutom Event Demo</div>
+     <script>
+        function highlight(elem) {
+            const bgColor = 'yellow';
+            elem.style.backgroundColor = bgColor;
+
+            let event = new CustomEvent('mark', {
+                detail: {
+                    backgroundColor: bgColor
+                }
+            });
+                elem.dispatchEvent(event);
+        }
+
+            let div = document.querySelector('.note');
+
+            function addBorder(elem) {
+                elem.style.border = "solid 1px red";
+            }
+
+            div.addEventListener('mark', function (e) {
+                addBorder(this);
+
+                alert(e.detail);
+            });
+
+                highlight(div);
+     </script>
 
 
 </body>

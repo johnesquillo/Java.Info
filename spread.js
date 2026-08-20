@@ -60,3 +60,18 @@ btnn.addEventListener('click', () => {
 
 let clickEvent = new Event('click');
 btnn.dispatchEvent(Event);
+
+function highlight(elem, callback) {
+    elem.style.backgroundaColor = 'yellow';
+
+    if (callback && typeof callback === 'function') {
+        callback(elem);
+    }
+}
+
+let note = document.querySelector('.note');;
+function addBorder(elem) {
+    elem.style.border = 'solid 1px red';
+}
+
+highlight(note, addBorder);
